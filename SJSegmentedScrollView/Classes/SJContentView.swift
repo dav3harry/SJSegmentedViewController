@@ -35,7 +35,7 @@ class SJContentView: UIScrollView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        isScrollEnabled = false //disable scroll gesture
         delegate = self
 		isPagingEnabled = true
         showsVerticalScrollIndicator = false
