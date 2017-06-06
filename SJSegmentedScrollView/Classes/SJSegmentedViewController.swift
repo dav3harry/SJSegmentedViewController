@@ -286,7 +286,7 @@ import UIKit
         super.viewDidLayoutSubviews()
         
         let topSpacing = SJUtil.getTopSpacing(self)
-        segmentedScrollView.topSpacing = topSpacing
+        segmentedScrollView.topSpacing = 10//topSpacing > add extra space on top
         segmentedScrollView.bottomSpacing = SJUtil.getBottomSpacing(self)
         segmentScrollViewTopConstraint?.constant = topSpacing
         segmentedScrollView.updateSubviewsFrame(view.bounds)
